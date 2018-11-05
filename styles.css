@@ -1,0 +1,22 @@
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+}
+body {
+  color: white
+}
+h1 {
+  color: white
+}
+
+h3 {
+  color: white
+}
+
+p {
+  color: white
+}
+div {
+  color: white
+}
+.font{
+  color: white
+}
