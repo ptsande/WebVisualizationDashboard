@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
-<nav class="navbar navbar-default" style="background-color: lightskyblue">
+<nav class="navbar navbar-default" style="background-color: #4c92c3">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -18,44 +18,44 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="index.html" style="color: white">Wx Insights</a>
       </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" style="color: white">Plots <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="temperature.html">Temperature</a></li>
+              <li><a href="humidity.html">Humidity</a></li>
+              <li><a href="windspeed.html">Windspeed</a></li>
+              <li><a href="cloudiness.html">Cloudiness</a></li>
             </ul>
-            <li><a href="#">Comparison</a></li>
-            <li><a href="#">Data</a></li>
+            <li><a href="comparison.html" style="color: white">Comparison</a></li>
+            <li><a href="data.html" style="color: white">Data</a></li>
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-
 <body style="background-color: black">
   <div class="container">
       <div class="row">
           <div class="col-md-12">
-            <h2>Visualization Temperature by Latitude</h1>
+            <h2>Visualizing Temperature by Latitude</h1>
           </div>
         </div>
         <div class="row">
       <div class="col-md-6">
         <a target="_blank" href="Images/Fig1.png">
-          <img src="Images/Fig1.png" alt="Temp by Lat">
+          <img src="Images/Fig1.png" class="responsive-image" alt="Temp by Latitude">
         </a>
       </div>
       <div class="col-md-6">
-        <p>Understanding the weather and it's trends in a single location is an incredibly complex ontaking.  Now expand on that
-          by trying to identify global weather trends and you're going to run into challenges without some sound data and accompanying visualizations.<br><br>
-          This weather analytics dashboard is a project that looked at over 500 randomly genearated locations throughout the world. Using Python and the OpenWeather API,
-          the goal of this project was to understand how latitude impacts four key weather observations:  Temperature, Humidity, Windspeed, and Cloudiness.
+        <p>Using a scatterplot, we're able to see how temperature changes as we move closer to the equator.
+          It's not a suprise to see that temperatures rise the close one is to the equator.  This scatterplot has a 
+          fairly uniform, bell-shaped curve.  Beyond showing temperature trends, this scatterplot also gives us some insight
+          into the distribution of cities across the globe.  This graph suggests that there's a great concentration of cities 
+          in the northern hemisphere.
         </p>
       </div>
     </div>

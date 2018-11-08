@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>Weather Analytics Dashboard</title>
+  <title>Cloudiness vs. Latitude</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
-<nav class="navbar navbar-default" style="background-color: lightskyblue">
+<nav class="navbar navbar-default" style="background-color: #4c92c3">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -18,20 +18,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="index.html" style="color: white">Wx Insights</a>
       </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" style="color: white">Plots <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="temperature.html">Temperature</a></li>
+              <li><a href="humidity.html">Humidity</a></li>
+              <li><a href="windspeed.html">Windspeed</a></li>
+              <li><a href="cloudiness.html">Cloudiness</a></li>
             </ul>
-            <li><a href="#">Comparison</a></li>
-            <li><a href="#">Data</a></li>
+            <li><a href="comparison.html" style="color: white">Comparison</a></li>
+            <li><a href="data.html" style="color: white">Data</a></li>
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -42,20 +42,25 @@
   <div class="container">
       <div class="row">
           <div class="col-md-12">
-            <h1>Visualizing Weather Trends: Weather Oberservations by Latitude</h1>
+            <h2>Visualizing Cloudiness by Latitude</h2>
           </div>
         </div>
         <div class="row">
       <div class="col-md-6">
-        <a target="_blank" href="Images/Fig1.png">
-          <img src="Images/Fig1.png" alt="Temp by Lat">
+        <a target="_blank" href="Images/Fig3.png">
+          <img src="Images/Fig3.png" class="responsive-image" alt="Cloudiness by Latitude">
         </a>
       </div>
       <div class="col-md-6">
-        <p>Understanding the weather and it's trends in a single location is an incredibly complex ontaking.  Now expand on that
-          by trying to identify global weather trends and you're going to run into challenges without some sound data and accompanying visualizations.<br><br>
-          This weather analytics dashboard is a project that looked at over 500 randomly genearated locations throughout the world. Using Python and the OpenWeather API,
-          the goal of this project was to understand how latitude impacts four key weather observations:  Temperature, Humidity, Windspeed, and Cloudiness.
+        <p>Cloud cover is another standard weather observation that's reported on throughout the world.  This visualization is useful in 
+          exploring the relationship between latitude and cloud cover. In reviewing this graph, I feel that it's not possible to draw
+          any relationships between latitude and level of cloudiness.  That said, this graph still provides some interesting insights. <br><br>
+          <ul>
+            Of note:
+            <li>Very few locations reported 100% cloud cover on 8/22/2016, only 4 locations out of over 500!</li>
+            <li>I also find it interesting to look at
+                where the clusters are.  It appears that, generally speaking, level of cloudiness is often reported in 20% increments.</li>
+          </ul>
         </p>
       </div>
     </div>

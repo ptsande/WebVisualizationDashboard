@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
-<nav class="navbar navbar-default" style="background-color: lightskyblue">
+<nav class="navbar navbar-default" style="background-color: #4c92c3">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -18,20 +18,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="index.html" style="color: white">Wx Insights</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown">Plots <span class="caret"></span></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" style="color: white">Plots <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="temperature.html">Temperature</a></li>
               <li><a href="humidity.html">Humidity</a></li>
               <li><a href="windspeed.html">Windspeed</a></li>
               <li><a href="cloudiness.html">Cloudiness</a></li>
             </ul>
-            <li><a href="comparison.html">Comparison</a></li>
-            <li><a href="data.html">Data</a></li>
+            <li><a href="comparison.html" style="color: white">Comparison</a></li>
+            <li><a href="data.html" style="color: white">Data</a></li>
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -48,14 +48,15 @@
         <div class="row">
       <div class="col-md-6">
         <a target="_blank" href="Images/Fig1.png">
-          <img src="Images/Fig1.png" alt="Temp by Lat">
+          <img src="Images/Fig1.png" class="responsive-image" alt="Temp by Lat">
         </a>
       </div>
       <div class="col-md-6">
         <p>Understanding the weather and it's trends in a single location is an incredibly complex ontaking.  Now expand on that
           by trying to identify global weather trends and you're going to run into challenges without some sound data and accompanying visualizations.<br><br>
           This weather analytics dashboard is a project that looked at over 500 randomly genearated locations throughout the world. Using Python, MapPlotLib, and the OpenWeather API,
-          the goal of this project was to understand how latitude impacts four key weather observations:  Temperature, Humidity, Windspeed, and Cloudiness.
+          the goal of this project was to understand how latitude impacts four key weather observations*:  Temperature, Humidity, Windspeed, and Cloudiness.<br><br>
+          * Weather observations are based on readings taken via OpenWeather on August 22, 2018.
         </p>
       </div>
     </div>
